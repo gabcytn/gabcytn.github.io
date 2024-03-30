@@ -10,7 +10,9 @@ $(document).click(function(event){
         $('#discount').css({'filter': 'blur(3px)', 'pointer-events': 'none'});
 
     } else if(!target.classList.contains('fa-bars') ){
-        $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
+        if(window.innerWidth < 576){
+            $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
+        }
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});
         $('#logo-link').css({'filter': 'none', 'pointer-events': 'auto'});

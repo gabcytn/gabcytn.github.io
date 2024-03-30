@@ -11,7 +11,9 @@ $(document).click(function(event){
         $('#sign-in-btn').addClass('nav-link');
 
     } else if(!target.classList.contains('fa-bars') ){
-        $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
+        if(window.innerWidth < 576){
+            $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
+        }
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.main-contents').css({'background': 'none', 'filter': 'none'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});
