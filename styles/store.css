@@ -1,0 +1,563 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    text-wrap: balance;
+}
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url('../webfonts/pokemonhollow-webfont.woff') format('woff2'),
+         url('../webfonts/pokemonhollow-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../webfonts/pokemon_solid-webfont.woff2') format('woff2'),
+         url('../webfonts/pokemon_solid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #130b20;
+    font-family: 'Poppins' !important;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background: url(../media/store-img.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav li{
+    font-size: 1.15rem;
+}
+#logo-img{
+    width: 100px;
+}
+#hamburger{
+    display: none;
+}
+#my-nav{
+    transition: 0.5s;
+}
+.user-img-container{
+    display: none;
+}
+
+.cart:hover > .cart-drop{
+    display: block;
+}
+.cart-drop{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    position: absolute;
+    margin-left: 1rem;
+    width: max-content;
+    z-index: 2;
+}
+.cart-drop a{
+    text-decoration: none;
+}
+.nav-link:hover,
+.cart-drop a:hover{
+    text-decoration: underline;
+}
+#sign-in-btn{
+    background-color: #3B4CCA ;
+}
+@media (max-width: 576px) {
+    #profile-nav{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        font-size: 1.75rem;
+        cursor: pointer;
+        margin-right: .5rem;
+        color: #1a68a8;
+    }
+    #sign-in-btn{
+        color: rgb(255, 209, 5) !important;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    #my-nav{
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        display: block;
+        position: absolute;
+        right: -75%;
+        top: 0;
+        min-height: 100dvh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 50%;
+        z-index: 10;
+    }
+    .user-img-container{
+        padding-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        margin-top: 1rem;
+    }
+    #username{
+        text-align: center;
+        color: #ffffffa8;
+    }
+    .cart-drop{
+        display: block;
+        position: relative;
+        margin: 0;
+        background-color: transparent;
+        width: 100%;
+    }
+    .cart-drop li + li{
+        margin-top: 2rem;
+    }
+    .main-contents{
+        border-radius: 0px !important;
+        box-shadow: none !important;
+    }
+}
+
+#discount{
+    font-weight: bold;
+    line-height: 1.25em;
+    font-size: 3rem;
+    margin-bottom: 2em;
+    width: 75%;
+}
+
+/* ----------------------------------------------------------- */
+
+main{
+    background: linear-gradient(to bottom, #101c31 20%, #10091d 80%);
+    font-family: 'Poppins';
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+#fest-img{
+    position: absolute;
+    top: -37.5%;
+    left: -20%;
+    z-index: -10;
+    max-width: 200px;
+}
+.wrapper{
+    max-width: 650px ;
+    width: 90%;
+    padding: 2rem 0;
+    background-color: #00b4a9;
+    border-radius: 10px;
+    transition: transform .25s;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    margin-top: 5rem;
+    /* opacity: 1; */
+    /* opacity: 0; */
+}
+/* .wrapper.reveals{
+    animation: opacityFadeIn 1.5s forwards;
+}
+@keyframes opacityFadeIn {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+} */
+.fest-left{
+    width: 60%;
+}
+.fest-right{
+    width: 40%;
+}
+.fest-right img{
+    max-width: 200px;
+    width: 100%;
+}
+.wrapper:hover{
+    transform: scale(1.015);
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.3);
+}
+
+.dark-boxes{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.colored-boxes{
+    width: 100%;
+    height: 25px;
+    background-color: #008b82;
+    border-radius: 10px;
+}
+
+.wrapper h3,
+.wraper p{
+    font-weight: bold;
+}
+
+.buy-btn{
+    background: linear-gradient(to bottom, #018c83, #6fae4c);
+    border: none;
+    outline: none;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    transition: .15s;
+}
+.buy-btn:hover{
+    transform: scale(1.025);
+    background-color: #008b82;
+}
+
+
+/* ----------------------------------------------------------- */
+
+.webstore-img{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#webstore-pic{
+    width: 300px;
+}
+#pikachu-webstore{
+    width: 150px;
+}
+
+.store-section-title{
+    transform: skew(-30deg);
+    padding: .5rem 1.5em;
+    margin-bottom: 2.5em;
+    color: #eee;
+    background-color: #101c31;
+    border: 2px solid #048d89;
+    display: flex;
+    align-items: center;
+}
+.store-section-title h1{
+    transform: skew(30deg);
+    font-size: 2rem;
+    width: 100%;
+}
+.store-item {
+    background-color: #0d2b39;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #817d27;
+    transition: .25s;
+}
+.store-item:hover{
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.3);
+}
+.item-title{
+    font-family: 'Pokemon Hollow';
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #269f98 40%, #fbc908, #269f98);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.store-item img{
+    display: block;
+    margin: 1rem auto;
+}
+.item-price{
+    text-align: center;
+    color: #2bb1a8;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.cart-btn{
+    background: linear-gradient(to right, #018c83, #77b74c);
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin: 0 auto 1rem;
+    border-radius: 100px;
+    display: block;
+    cursor: pointer;
+    transition: .25s;
+}
+.cart-btn:hover{
+    opacity: 0.75;
+    transform: scale(1.015);
+}
+
+.fade-in{
+    opacity: 0;
+}
+
+.one-fade.reveals{
+    animation: fadeFromLeft .75s 0s forwards;
+}
+.two-fade.reveals{
+    animation: fadeFromLeft .75s 0.05s forwards;
+}
+.three-fade.reveals{
+    animation: fadeFromLeft .75s 0.1s forwards;
+}
+.four-fade.reveals{
+    animation: fadeFromLeft .75s 0.15s forwards;
+}
+
+.store-section-title.reveals{
+    animation: storeAnimation .75s forwards;
+}
+
+@keyframes fadeFromLeft {
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    } to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeFromRight {
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    } to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes storeAnimation {
+    from{
+        transform: skew(-30deg) translateX(-30px);
+        opacity: 0;
+    } to{
+        transform: skew(-30deg) translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.footnote{
+    max-width: 650px;
+    width: 90%;
+    background: linear-gradient(to bottom, #1c877d, #92ad2f);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+    padding: 3rem 0;
+
+}
+#ash,
+#pikachu{
+    position: absolute;
+    top: 0;
+    transform: scale(1.215);
+}
+#ash{
+    left: 0;
+}
+#pikachu{
+    right: 0;
+}
+
+#footnote-qr{
+    display: block;
+    margin: 1rem auto;
+}
+
+.footnote h1{
+    text-align: center;
+}
+
+.footnote-socials{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footnote-socials img{
+    width: 130px;
+    cursor: pointer;
+    transition: .225s;
+}
+.footnote-socials img:hover{
+    transform: scale(1.025);
+}
+
+@media (max-width: 650px) {
+    #ash,
+    #pikachu{
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 576px) {
+    #ash,
+    #pikachu{
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    #footnote-qr{
+        width: 100px;
+    }
+    .footnote-socials img{
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #2fc7b9;
+    font-family: 'Poppins';
+}
+.niantic-logo,
+.mighty-mouse{
+    display: flex;
+}
+.niantic-logo img{
+    width: 250px;
+}
+.mighty-mouse img{
+    width: 150px;
+}
+.social-media i{
+    font-size: 2rem;
+    cursor: pointer
+}
+.social-media i:hover{
+    transform: scale(1.105);
+}
+
+.policies{
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
+}
+.policies li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.policies li:hover{
+    text-decoration: underline;
+}
+
+.copyright p{
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 992px){
+    .social-media i{
+        font-size: 1.25rem;
+    }
+    
+}
+
+.fade-from-left.reveals{
+    animation: fadeFromLeft .75s forwards;
+}
+
+.fade-from-right.reveals{
+    animation: fadeFromRight .75s forwards;
+}
+@media (max-width: 992px) {
+    #discount{
+        font-size: 2rem;
+    }
+    #fest-img{
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50%;
+        z-index: -1;
+        max-width: 180px;
+    }
+    .wrapper{
+        z-index: 5;
+    }
+}
+
+@media (max-width: 782px) {
+    #discount{
+        font-size: 1.5rem;
+        width: 100%;
+        /* text-align: center; */
+        /* border: 2px solid; */
+    }
+}
+
+@media (max-width: 576px) {
+    #discount{
+        font-size: 1.5rem;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    #fest-img{
+        max-width: 150px;
+    }
+    .webstore-img{
+        gap: 1rem;
+    }
+
+    #webstore-pic{
+        width: 205px;
+    }
+    #pikachu-webstore{
+        width: 75px;
+    }
+
+    .store-section-title{
+        transform: skew(-30deg);
+        padding: .5rem 1.5em;
+        margin-bottom: 2.5em;
+        color: #eee;
+        background-color: #101c31;
+        border: 2px solid #048d89;
+        display: flex;
+        align-items: center;
+    }
+    .store-section-title h1{
+        font-size: 1.15rem;
+    }
+    .store-item img{
+        width: 100px;
+    }
+}

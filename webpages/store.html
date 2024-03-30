@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/store.css">
+    <script defer src="../scripts/store.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4bc1035a4c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../media/poke items/Poké Ball.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <nav class="navbar">
+                        <div class="navbar-brand">
+                            <a href="../index.html" id="logo-link">
+                                <img src="../media/pokemonGo_log.png" alt="Logo" id="logo-img">
+                            </a>
+                        </div>
+                        <ul class="nav" id="my-nav">
+                            <div class="user-img-container">
+                                <a href="profile.html">
+                                    <img src="../media/user.png" alt="User Img" id="user-img">
+                                </a>
+                                
+                                <p id="username" >Username</p>
+                            </div>
+                            
+                            <li class="nav-item"><a href="#" class="nav-link text-light">Store</a></li>
+                            <li class="nav-item"><a href="profile.html" class="nav-link text-light" id="profile-nav">Profile</a></li>
+                            <li class="nav-item position-relative cart">
+                                <a class="nav-link text-light" href="cart.html">Cart</a>
+                                <div class="cart-drop">
+                                    <ul class="list-inline py-2 px-3">
+                                        <li class="text-light"><a href="payment.html" class="text-light">Payment</a></li>
+                                        <li class="text-light"><a href="transaction.html" class="text-light">Transaction history</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="signup.html" class="btn text-light" id="sign-in-btn">Sign up</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-light" id="discount">15% discount for your first Web Store purchase on any item $9.99 or more!</h2>
+        </div>
+    </header>
+
+    <main class="py-5">
+        
+        <section class="wrapper">
+            <img id="fest-img" src="../media/webstore-img.png" alt="">
+            <div class="fest-left ps-3">
+                <div class="row">
+                    <div class="dark-boxes col-12">
+                        <div class="colored-boxes"></div>
+                        <div class="colored-boxes"></div>
+                        <div class="colored-boxes"></div>
+                    </div>
+                    <div class="col-12">
+                        <h3>Pokemon GO Fest 2024: <br> Global Ticket</h3>
+                    </div>
+                    <div class="col-12">
+                        <p>P499.99</p>
+                    </div>
+                    <div class="gy-sm-5 col-12">
+                        <button class="buy-btn text-light">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fest-right d-flex justify-content-center align-items-center">
+                <img src="../media/pokegofest.png" alt="">
+            </div>
+        </section>
+
+        <section id="webstore">
+
+            <div class="webstore-img">
+                <img id="webstore-pic" src="../media/webstore img.png" alt="" class="fade-in fade-from-left">
+                <img src="../media/pikachu webstore.png" alt="" id="pikachu-webstore" class="fade-in fade-from-right">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Enhancing Pokemon Encounters</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Bag Upgrade</h2>
+                            <img src="../media/Bag Upgrade.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Bag Upgrade</h2>
+                            <img src="../media/Bag Upgrade.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Bag Upgrade</h2>
+                            <img src="../media/Bag Upgrade.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Bag Upgrade</h2>
+                            <img src="../media/Bag Upgrade.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Pokemon Catching</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Pokeball</h2>
+                            <img src="../media/poke items/Poké Ball.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Pokeball</h2>
+                            <img src="../media/poke items/Poké Ball.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Pokeball</h2>
+                            <img src="../media/poke items/Poké Ball.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Pokeball</h2>
+                            <img src="../media/poke items/Poké Ball.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Money</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Coins</h2>
+                            <img src="../media/poke items/cooins.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Coins</h2>
+                            <img src="../media/poke items/cooins.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Coins</h2>
+                            <img src="../media/poke items/cooins.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Coins</h2>
+                            <img src="../media/poke items/cooins.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Pokemon Eggs</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Lucky Egg</h2>
+                            <img src="../media/Lucky Egg.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Lucky Egg</h2>
+                            <img src="../media/poke items/Lucky Egg.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Lucky Egg</h2>
+                            <img src="../media/poke items/Lucky Egg.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Lucky Egg</h2>
+                            <img src="../media/poke items/Lucky Egg.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Passes</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Raid</h2>
+                            <img src="../media/poke items/raid-pass.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Raid</h2>
+                            <img src="../media/poke items/raid-pass.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Battle</h2>
+                            <img src="../media/poke items/raid-pass.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Premium</h2>
+                            <img src="../media/poke items/raid-pass.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Pokemon Egg Hatching</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Incubator</h2>
+                            <img src="../media/poke items/Egg Incubator.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Incubator</h2>
+                            <img src="../media/poke items/Egg Incubator.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Incubator</h2>
+                            <img src="../media/poke items/Egg Incubator.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Incubator</h2>
+                            <img src="../media/poke items/Egg Incubator.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Regeneration</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Revive</h2>
+                            <img src="../media/poke items/Revives.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Revive</h2>
+                            <img src="../media/poke items/Revives.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Max</h2>
+                            <img src="../media/poke items/Revives.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Max</h2>
+                            <img src="../media/poke items/Revives.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Storage and Capacity</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Storage</h2>
+                            <img src="../media/poke items/Pokémon Storage Upgrade.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Storage</h2>
+                            <img src="../media/poke items/Pokémon Storage Upgrade.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Storage</h2>
+                            <img src="../media/poke items/Pokémon Storage Upgrade.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Storage</h2>
+                            <img src="../media/poke items/Pokémon Storage Upgrade.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Happiness</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Poffin</h2>
+                            <img src="../media/poke items/Poffin.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Poffin</h2>
+                            <img src="../media/poke items/Poffin.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Poffin</h2>
+                            <img src="../media/poke items/Poffin.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Poffin</h2>
+                            <img src="../media/poke items/Poffin.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Powerup</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Star Piece</h2>
+                            <img src="../media/poke items/Star Piece.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Star Piece</h2>
+                            <img src="../media/poke items/Star Piece.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Star Piece</h2>
+                            <img src="../media/poke items/Star Piece.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Star Piece</h2>
+                            <img src="../media/poke items/Star Piece.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Berries</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Razz</h2>
+                            <img src="../media/poke items/Berries.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Nanab</h2>
+                            <img src="../media/poke items/Berries.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Pinap</h2>
+                            <img src="../media/poke items/Berries.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Silver</h2>
+                            <img src="../media/poke items/Berries.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Potions</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Regular</h2>
+                            <img src="../media/poke items/potions.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Hyper</h2>
+                            <img src="../media/poke items/potions.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Super</h2>
+                            <img src="../media/poke items/potions.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Max</h2>
+                            <img src="../media/poke items/potions.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div class="store-section-title fade-in">
+                            <h1 class="text-lg-start text-center m-0">Lure / Attraction</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Lure</h2>
+                            <img src="../media/poke items/Lure Module.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Lure</h2>
+                            <img src="../media/poke items/Lure Module.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Lure</h2>
+                            <img src="../media/poke items/Lure Module.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Lure</h2>
+                            <img src="../media/poke items/Lure Module.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Mossy</h2>
+                            <img src="../media/poke items/Mossy Lure Module.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Mossy</h2>
+                            <img src="../media/poke items/Mossy Lure Module.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Mossy</h2>
+                            <img src="../media/poke items/Mossy Lure Module.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Mossy</h2>
+                            <img src="../media/poke items/Mossy Lure Module.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Rainy</h2>
+                            <img src="../media/poke items/Rainy Lure Module.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Rainy</h2>
+                            <img src="../media/poke items/Rainy Lure Module.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Rainy</h2>
+                            <img src="../media/poke items/Rainy Lure Module.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Rainy</h2>
+                            <img src="../media/poke items/Rainy Lure Module.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Glacial</h2>
+                            <img src="../media/poke items/Glacial Lure Module.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Glacial</h2>
+                            <img src="../media/poke items/Glacial Lure Module.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Glacial</h2>
+                            <img src="../media/poke items/Glacial Lure Module.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Glacial</h2>
+                            <img src="../media/poke items/Glacial Lure Module.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Magnetic</h2>
+                            <img src="../media/poke items/Magnetic Lure Module.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Magnetic</h2>
+                            <img src="../media/poke items/Magnetic Lure Module.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Magnetic</h2>
+                            <img src="../media/poke items/Magnetic Lure Module.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Magnetic</h2>
+                            <img src="../media/poke items/Magnetic Lure Module.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in one-fade">
+                            <h2 class="item-title">Incense</h2>
+                            <img src="../media/poke items/Incense.png" alt="">
+                            <h6 class="item-price">P 9.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in two-fade">
+                            <h2 class="item-title">Incense</h2>
+                            <img src="../media/poke items/Incense.png" alt="">
+                            <h6 class="item-price">P 99.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in three-fade">
+                            <h2 class="item-title">Incense</h2>
+                            <img src="../media/poke items/Incense.png" alt="">
+                            <h6 class="item-price">P 499.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="store-item fade-in four-fade mb-5">
+                            <h2 class="item-title">Incense</h2>
+                            <img src="../media/poke items/Incense.png" alt="">
+                            <h6 class="item-price">P 999.99</h6>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footnote">
+            <img src="../media/ash.png" alt="" id="ash">
+            <img src="../media/pikachu-pokeball.png" alt="" id="pikachu">
+
+            <div class="footnote-contents">
+                <h1>Get up and Go!</h1>
+                <img src="../media/qr-code.png" alt="" id="footnote-qr">
+                <h1>Catch your Pokemon Now!</h1>
+
+                <div class="footnote-socials">
+                    <img src="../media/google-play.png" alt="">
+                    <img src="../media/appstore.png" alt="">
+                    <img src="../media/galaxy-store.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer pb-4">
+            <div class="container">
+                <div class="row logo-row mb-5">
+                    <div class="col-md-4 col-8 niantic-logo">
+                        <div class="row d-flex align-items-center justify-content-center gx-0">
+                            <div class="col">
+                                <img src="../media/niantic.png" alt="Niantic" class="fade-in fade-from-left">
+                            </div>
+                            <div class="col">
+                                <img src="../media/thepokemoncompany.png" alt="" class="fade-in fade-from-left">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-2 col-4 offset-md-6 mighty-mouse d-flex align-items-center justify-content-center">
+                        <img src="../media/mighty-mouse-removebg-preview.png" alt="" class="fade-in fade-from-right">
+                    </div>
+                </div>
+                <div class="row gy-3 mt-5">
+                    <div class="col-sm-12">
+                        <div class="social-media fade-in fade-from-left d-flex justify-content-center gap-5 gap-5">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="policies fade-in fade-from-right">
+                            <ul class="p-0 d-flex flex-sm-row flex-column justify-content-center align-items-center gap-sm-5 gap-3">
+                                <li class="text-center">Terms of Service</li>
+                                <li class="text-center">Privacy Policy</li>
+                                <li class="text-center">Copyright Policy</li>
+                                <li class="text-center">Player Guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <p>"For educational purposes only and no copyright infringement is intended."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    
+</body>
+</html>

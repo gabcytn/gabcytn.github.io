@@ -1,0 +1,312 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    text-wrap: balance;
+}
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url('../webfonts/pokemonhollow-webfont.woff') format('woff2'),
+         url('../webfonts/pokemonhollow-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../webfonts/pokemon_solid-webfont.woff2') format('woff2'),
+         url('../webfonts/pokemon_solid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+    
+    /* overflow-x: hidden; */
+}
+img{
+    max-width: 100%;
+}
+/* ---------------------------------------------------------------------------------- */
+.main-section .container{
+    max-width: 950px !important;
+}
+nav{
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    width: 100%;
+}
+.header{
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    /* background: url(../media/secondary-bg.png); */
+    background: linear-gradient(to bottom, #101c31, #10091d);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100dvh;
+    position: relative;
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+
+}
+header{
+    justify-self: center;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+}
+nav li{
+    font-size: 1.15rem;
+}
+#logo-img{
+    width: 100px;
+}
+#hamburger{
+    display: none;
+}
+#my-nav{
+    transition: 0.5s;
+}
+.user-img-container{
+    display: none;
+}
+
+.cart:hover > .cart-drop{
+    display: block;
+}
+.cart-drop{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    position: absolute;
+    margin-left: 1rem;
+    width: max-content;
+    z-index: 10;
+}
+.cart-drop a{
+    text-decoration: none;
+}
+.nav-link:hover,
+.cart-drop a:hover{
+    text-decoration: underline;
+}
+#sign-in-btn{
+    background-color: #3B4CCA ;
+}
+
+@media (max-width: 550px) {
+    #profile-nav{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        font-size: 1.75rem;
+        cursor: pointer;
+        margin-right: .5rem;
+        color: #1a68a8;
+    }
+    #sign-in-btn{
+        color: rgb(255, 209, 5) !important;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    #my-nav{
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        display: block;
+        position: absolute;
+        right: -75%;
+        top: 0;
+        min-height: 100vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 50%;
+        z-index: 10;
+    }
+    .user-img-container{
+        padding-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        margin-top: 1rem;
+    }
+    #username{
+        text-align: center;
+        color: #ffffffa8;
+    }
+    .cart-drop{
+        display: block;
+        position: relative;
+        margin: 0;
+        background-color: transparent;
+        width: 100%;
+    }
+    .cart-drop li + li{
+        margin-top: 2rem;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+form{
+    /* border: 2px solid yellow; */
+    padding: .5rem 3rem 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins';
+    opacity : 0;
+    transform: translateY(20px);
+    animation: slideIn .75s forwards;
+}
+.register-now{
+    font-family: 'Pokemon Hollow';
+    font-size: 5rem;
+    background: linear-gradient(to bottom, #269f98 40%, #fbc908, #269f98);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+.main-section{
+    min-height: calc(100dvh - 7.5rem);
+    /* display: flex;
+    align-items: center; */
+    height: 100%;
+    /* border: 2px solid green; */
+    /* overflow: hidden;
+    width: 100%; */
+    
+}
+@keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    } to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media (max-width: 576px){
+    form{
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+    .register-now{
+        font-size: 3.5rem;
+    }
+    .footer{
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+
+
+
+.footer{
+    font-family: 'Poppins';
+    /* backdrop-filter: blur(15px); */
+    border-radius: 15px;
+    background-color: #fff;
+    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4); */
+
+}
+.footer-container{
+    animation: slideIn 1s forwards;
+}
+.niantic-logo,
+.mighty-mouse{
+    display: flex;
+}
+.niantic-logo img{
+    width: 250px;
+}
+.mighty-mouse img{
+    width: 150px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.social-media i{
+    font-size: 2rem;
+    cursor: pointer
+}
+.social-media i:hover{
+    transform: scale(1.105);
+}
+
+.policies{
+    /* border: 2px solid; */
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
+}
+.policies ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    margin: 0;
+}
+.policies li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.policies li:hover{
+    text-decoration: underline;
+}
+
+.copyright p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.fade-in{
+    opacity: 0;
+}
+.fade-from-left.reveals{
+    animation: fadeFromLeft 1s forwards;
+}
+.fade-from-right.reveals{
+    animation: fadeFromRight 1s forwards;
+}
+
+@keyframes fadeFromLeft {
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeFromRight {
+    from{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

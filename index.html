@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon GO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4bc1035a4c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="media/poke items/Poké Ball.png" type="image/x-icon">
+</head>
+<body>
+    <section class="video">
+        <video id="bg-video"src="media/bgpokemongo.mp4" autoplay muted loop ></video>
+        <header class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <nav class="navbar">
+                        <div class="navbar-brand">
+                            <a href="#">
+                                <img src="media/pokemonGo_log.png" alt="Logo" id="logo-img">
+                            </a>
+                        </div>
+                        <ul class="nav" id="my-nav">
+                            <div class="user-img-container">
+                                <a href="webpages/profile.html">
+                                    <img src="media/user.png" alt="User Img" id="user-img">
+                                </a>
+                                
+                                <p id="username" ></p>
+                            </div>
+                            
+                            <li class="nav-item"><a href="webpages/store.html" class="nav-link text-light">Store</a></li>
+                            <li class="nav-item"><a href="webpages/profile.html" class="nav-link text-light" id="profile-nav">Profile</a></li>
+                            <li class="nav-item position-relative cart">
+                                <a class="nav-link text-light" href="webpages/cart.html">Cart</a>
+                                <div class="cart-drop">
+                                    <ul class="list-inline py-2 px-3">
+                                        <li class="text-light"><a href="webpages/payment.html" class="text-light">Payment</a></li>
+                                        <li class="text-light"><a href="webpages/transaction.html" class="text-light">Transaction history</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item"><a href="#" class="nav-link text-light">Offer Redemption</a></li> -->
+                            <li class="nav-item"><a href="webpages/signup.html" class="btn text-light" id="sign-in-btn">Sign up</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <main>
+        
+        <section class="one-section">
+
+        
+            <section class="events-section">
+                <div class="container">
+                    <h1 class="fade-from-left latest-news mb-2 fade-in">LATEST NEWS</h1>
+                    <div class="row gy-3">
+                        <div class="col-6 fade-in fade-from-right"><img src="media/Event pic.jpg" alt=""></div>
+                        <div class="col-6 fade-in fade-from-right"><img src="media/Event pic.jpg" alt=""></div>
+                        <div class="col-lg-4 col-6 fade-in fade-from-left"><img src="media/Event pic.jpg" alt=""></div>
+                        <div class="col-lg-4 col-6 fade-in fade-from-left"><img src="media/Event pic.jpg" alt=""></div>
+                        <div class="col-lg-4 col-12 fade-in fade-from-left"><img src="media/Event pic.jpg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="container py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="media/2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/4.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/5.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/snor.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="pokemon-slide">
+            <div class="container">
+                <div class="slide-title" style="display: flex; justify-content: space-between; position: relative;">
+                    <h1 class="fade-in pokemon-slide-title">POKEMONS</h1>
+                </div>
+                
+            </div>
+            <div class="slides container slide-one fade-in">
+                <div class="img-slides slide-left">
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Arceus-removebg-preview.png" alt="Arceus">
+                            </div>
+                            <div class="card-face card-back normal-type">
+                                <h2>Arceus</h2>
+                                <p>Arceus is a <strong>Normal-type</strong> Mythical Pokémon. Arceus can change type and form when it is holding a Plate or type-specific Z-Crystal.</p>
+                                <img src="media/normal-type.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Dusknoir-removebg-preview.png" alt="Dusknoir">
+                            </div>
+                            <div class="card-face card-back ghost-type">
+                                <img src="media/ghost-type.png" alt="">
+                                <h2>Dusknoir</h2>
+                                <p>Dusknoir is a <strong>Ghost-type</strong> Pokémon introduced in Generation IV. It evolves from Dusclops when traded while holding a Reaper Cloth. It is the final form of Duskull.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/blaziken-removebg-preview.png" alt="Blaziken">
+                            </div>
+                            <div class="card-face card-back fire-type">
+                                <h2>Blaziken</h2>
+                                <p>Blaziken is a <strong>Fire-type</strong> Pokémon introduced in Generation III. It evolves from Combusken starting at level 36. It is the final form of Torchic.</p>
+                                <img src="media/fire-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Carnivine-removebg-preview.png" alt="Carnivine">
+                            </div>
+                            <div class="card-face card-back grass-type">
+                                <h2>Carnivine</h2>
+                                <p>Carnivine is a <strong>Grass-type</strong> Pokémon introduced in Generation IV.It is not known to evolve into or from any other Pokémon.</p>
+                                <img src="media/grass-type.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Charizard-removebg-preview.png" alt="Charizard">
+                            </div>
+                            <div class="card-face card-back fire-type">
+                                <h2>Charizard</h2>
+                                <p>Charizard is a <strong>dual-type Fire/Flying</strong> Pokémon. It evolves from Charmeleon. It is the final form of Charmander.</p>
+                                <img src="media/fire-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Delphox-removebg-preview.png" alt="Delphox">
+                            </div>
+                            <div class="card-face card-back fire-type">
+                                <h2>Delphox</h2>
+                                <p>Delphox is a <strong>dual-type Fire/Psychic</strong> Pokémon introduced in Generation VI. It evolves from Braixen starting at level 36. It is the final form of Fennekin.</p>
+                                <img src="media/fire-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides container slide-two fade-in">
+                <div class="img-slides slide-right">
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Grapploct-removebg-preview.png" alt="Grapploct">
+                            </div>
+                            <div class="card-face card-back fight-type">
+                                <h2>Grapploct</h2>
+                                <p>Grapploct is a <strong>Fighting-type</strong> Pokémon introduced in Generation VIII. It evolves from Clobbopus when leveled up while knowing Taunt.</p>
+                                <img src="media/fight-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Grimmsnarl-removebg-preview.png" alt="Grimmsnarl">
+                            </div>
+                            <div class="card-face card-back dark-type">
+                                <h2>Grimmsnarl</h2>
+                                <p>Grimmsnarl is a <strong>dual-type Dark/Fairy</strong> Pokémon. It evolves from Morgrem starting at level 42. It is the final form of Impidimp.</p>
+                                <img src="media/dark-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Groudon-removebg-preview.png" alt="Groudon">
+                            </div>
+                            <div class="card-face card-back ground-type">
+                                <h2>Groudon</h2>
+                                <p>Groudon is a <strong>Ground-type</strong>  Legendary Pokémon. He can undergo Primal Reversion and become Primal Groudon if it holds the Red Orb.</p>
+                                <img src="media/ground-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Gyarados-removebg-preview.png" alt="Gyarados">
+                            </div>
+                            <div class="card-face card-back water-type">
+                                <h2>Gyarados</h2>
+                                <p>Gyarados is a <strong>dual-type Water/Flying</strong> Pokémon. Gyarados can Mega Evolve into Mega Gyarados using the Gyaradosite.</p>
+                                <img src="media/water-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Krookodile-removebg-preview.png" alt="Krookodile">
+                            </div>
+                            <div class="card-face card-back ground-type">
+                                <h2>Krookodile</h2>
+                                <p>Krookodile is a <strong>dual-type Ground/Dark</strong> Pokémon introduced in Generation V. It evolves from Krokorok starting at level 40. It is the final form of Sandile.</p>
+                                <img src="media/ground-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Leafeon-removebg-preview.png" alt="Leafeon">
+                            </div>
+                            <div class="card-face card-back grass-type">
+                                <h2>Leafeon</h2>
+                                <p>Leafeon is a <strong>Grass-type</strong>  Pokémon introduced in Generation IV. It evolves from Eevee when leveled up near a Moss Rock or when exposed to a Leaf Stone.</p>
+                                <img src="media/grass-type.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides container slide-three fade-in">
+                <div class="img-slides slide-left">
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Lucario-removebg-preview.png" alt="Lucario">
+                            </div>
+                            <div class="card-face card-back fight-type">
+                                <h2>Lucario</h2>
+                                <p>Lucario is a <strong>dual-type Fighting/Steel</strong> Pokémon. It evolves from Riolu when leveled up with high friendship during the day.</p>
+                                <img src="media/fight-type.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Machamp-removebg-preview.png" alt="Machamp">
+                            </div>
+                            <div class="card-face card-back fight-type">
+                                <h2>Machamp</h2>
+                                <p>Machamp is a <strong>Fighting-type</strong> Pokémon introduced. It evolves from Machoke when traded or when exposed to a Linking Cord. It is the final form of Machop.</p>
+                                <img src="media/fight-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Metagross-removebg-preview.png" alt="Metagross">
+                            </div>
+                            <div class="card-face card-back steel-type">
+                                <h2>Metagross</h2>
+                                <p>Metagross is a <strong>dual-type Steel/Psychic</strong> pseudo-legendary Pokémon. It evolves from Metang starting at level 45. It is the final form of Beldum.</p>
+                                <img src="media/steel-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Mewtwo-removebg-preview.png" alt="Mewtwo">
+                            </div>
+                            <div class="card-face card-back psychic-type">
+                                <h2>Mewtwo</h2>
+                                <p>Mewtwo is a <strong>Psychic-type</strong>  Legendary Pokémon. It is not known to evolve into or from any other Pokémon, but can Mega Evolve into two forms: Mega Mewtwo X and Mega Mewtwo Y.</p>
+                                <img src="media/psychic-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Moltres-removebg-preview.png" alt="Moltres">
+                            </div>
+                            <div class="card-face card-back fire-type">
+                                <h2>Moltres</h2>
+                                <p>Moltres is a <strong>dual-type Fire/Flying</strong> Legendary Pokémon.Along with Articuno and Zapdos, it is one of the three legendary birds of Kanto.</p>
+                                <img src="media/fire-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Palkia-removebg-preview.png" alt="Palkia">
+                            </div>
+                            <div class="card-face card-back water-type">
+                                <h2>Palkia</h2>
+                                <p>Palkia is a <strong>dual-type Water/Dragon</strong> Legendary Pokémon. Palkia can transform into a second form, Origin Forme, while holding a Lustrous Globe.</p>
+                                <img src="media/water-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides container slide-four fade-in">
+                <div class="img-slides slide-right">
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Raikou-removebg-preview.png" alt="Raikou">
+                            </div>
+                            <div class="card-face card-back electric-type">
+                                <h2>Raikou</h2>
+                                <p>Raikou is an <strong>Electric-type</strong> Legendary Pokémon. Along with Entei and Suicune, it is one of the Legendary beasts resurrected by Ho-Oh after the burning of the Brass Tower.</p>
+                                <img src="media/electric-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/sceptile-removebg-preview.png" alt="Sceptile">
+                            </div>
+                            <div class="card-face card-back grass-type">
+                                <h2>Sceptile</h2>
+                                <p>Sceptile is a <strong>Grass-type</strong>  Pokémon introduced in Generation III. It evolves from Grovyle starting at level 36. It is the final form of Treecko.</p>
+                                <img src="media/grass-type.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Seismitoad-removebg-preview.png" alt="Seismitoad">
+                            </div>
+                            <div class="card-face card-back water-type">
+                                <h2>Seismitoad</h2>
+                                <p>Seismitoad is a <strong>dual-type Water/Ground</strong> Pokémon. It evolves from Palpitoad starting at level 36. It is the final form of Tympole.</p>
+                                <img src="media/water-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                       
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Swellow-removebg-preview.png" alt="Swellow">
+                            </div>
+                            <div class="card-face card-back flying-type">
+                                <h2>Swellow</h2>
+                                <p>Swellow is a <strong>dual-type Normal/Flying</strong> Pokémon introduced in Generation III. It evolves from Taillow starting at level 22.</p>
+                                <img src="media/flying-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Umbreon-removebg-preview.png" alt="Umbreon">
+                            </div>
+                            <div class="card-face card-back dark-type">
+                                <h2>Umbreon</h2>
+                                <p>Umbreon is a <strong>Dark-type </strong> Pokémon introduced in Generation II. It evolves from Eevee when leveled up with high friendship during the night.</p>
+                                <img src="media/dark-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                               <img src="media/Pokemon pics/Zapdos-removebg-preview.png" alt="Zapdos"> 
+                            </div>
+                            <div class="card-face card-back flying-type">
+                                <h2>Zapdos</h2>
+                                <p>Zapdos is a <strong>dual-type Electric/Flying</strong> Legendary Pokémon. Along with Articuno and Moltres, it is one of the three legendary birds of Kanto.</p>
+                                <img src="media/flying-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                       
+                        <div class="my-card">
+                            <div class="card-face card-front">
+                                <img src="media/Pokemon pics/Zeraora-removebg-preview.png" alt="Zeraora">
+                            </div>
+                            <div class="card-face card-back electric-type">
+                                <h2>Zeraora</h2>
+                                <p>Zeraora is an <strong>Electric-type</strong>  Mythical Pokémon. It is not known to evolve into or from any other Pokémon. The last Pokémon in the Alola Pokédex in Ultra Sun and Ultra Moon.</p>
+                                <img src="media/electric-type.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="adventure-section">
+            <div class="adventure-img--container">
+                <img src="media/footer-img.png" alt="Adventure" class="adventure-img">
+                
+                <div class="adventure-section__texts fade-in opacity-fade">
+                    <h1>Items for your Adventure</h1>
+                    <p>Spin Photo Discs at PokéStops and Gyms to receive items that will help  you on your <br> Pokémon GO journey, including Poké Balls, Berries, Evolution  items, and more.</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="download-footer">
+            <h1 class="download-now fade-in fade-from-left">DOWNLOAD NOW!</h1>
+            <div class="linear-gradient">
+                <div class="container ash-container">
+                    
+                    <img src="media/ash.png" alt="Ash" id="ash-img" class="fade-in opacity-fade">
+                    <img src="media/pikachu-pokeball.png" alt="Pikachu" id="pikachu-pokeball" class="fade-in opacity-fade">
+                    <div class="download-links fade-in opacity-fade">
+                        <a href="#"><img src="media/google-play.png" alt="Google Play"></a>
+                        <a href="#"><img src="media/appstore.png" alt="App Store"></a>
+                        <a href="#"><img src="media/galaxy-store.png" alt="Galaxy Store"></a>
+                    </div>
+
+                    <div class="left-sec">
+                        <div class="footer-text fade-in fade-from-right">
+                            <h1 class="text-light">Get UP and GO!</h1>
+                            <h1 class="text-light">Catch your Pokemon now!</h1>
+                        </div>
+                    </div>
+                    <div class="right-sec"></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="footer pb-4">
+            <div class="container">
+                <div class="row logo-row mb-5">
+                    <div class="col-md-4 col-8 niantic-logo">
+                        <div class="row d-flex align-items-center justify-content-center gx-0">
+                            <div class="col">
+                                <img src="media/niantic.png" alt="Niantic" class="fade-in fade-from-left">
+                            </div>
+                            <div class="col">
+                                <img src="media/thepokemoncompany.png" alt="" class="fade-in fade-from-left">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-2 col-4 offset-md-6 mighty-mouse d-flex align-items-center justify-content-center">
+                        <img src="media/mighty-mouse-removebg-preview.png" alt="" class="fade-in fade-from-right">
+                    </div>
+                </div>
+                <div class="row gy-3 mt-5">
+                    <div class="col-sm-12">
+                        <div class="social-media fade-in fade-from-left d-flex justify-content-center gap-5 gap-5">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="policies fade-in fade-from-right">
+                            <ul class="p-0 d-flex flex-sm-row flex-column justify-content-center align-items-center gap-sm-5 gap-3">
+                                <li class="text-center">Terms of Service</li>
+                                <li class="text-center">Privacy Policy</li>
+                                <li class="text-center">Copyright Policy</li>
+                                <li class="text-center">Player Guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <p>"For educational purposes only and no copyright infringement is intended."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
