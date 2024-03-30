@@ -1,7 +1,7 @@
 $(document).click(function(event){
     let target = event.target;
     if(target.classList.contains('fa-bars')){
-        $('#my-nav').css({'right' : '0', 'opacity': '1'});
+        $('#my-nav').css({'opacity': '1', 'pointer-events': 'auto'});
         $('body').css({'height': '100dvh', 'overflow-y': 'hidden'});
         $('.main-contents').css({'filter': 'blur(5px)'});
         $('#logo-link').css({'filter': 'blur(5px)', 'pointer-events': 'none'});
@@ -11,7 +11,7 @@ $(document).click(function(event){
         $('#sign-in-btn').addClass('nav-link');
 
     } else if(!target.classList.contains('fa-bars') ){
-        $('#my-nav').css({'right' : '-75%'});
+        $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.main-contents').css({'background': 'none', 'filter': 'none'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});
@@ -25,7 +25,7 @@ $(document).click(function(event){
 
 $(window).resize(function(){
     if (window.innerWidth > 576) {
-        $('#my-nav').css({'right' : '-75%'});
+        $('#my-nav').css({'opacity': '1', 'pointer-events': 'auto'});
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.main-contents').css({'background': 'none', 'filter': 'none'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});

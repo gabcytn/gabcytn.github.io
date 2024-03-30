@@ -1,7 +1,7 @@
 $(document).click(function(event){
     let target = event.target;
     if(target.classList.contains('fa-bars')){
-        $('#my-nav').css({'right' : '0', 'opacity': '1'});
+        $('#my-nav').css({'opacity': '1', 'pointer-events': 'auto'});
         $('body').css({'height': '100dvh', 'overflow-y': 'hidden'});
         $('#logo-link').css({'filter': 'blur(3px)', 'pointer-events': 'none'});
         $('#sign-in-btn').removeClass('btn');
@@ -10,7 +10,7 @@ $(document).click(function(event){
         $('#discount').css({'filter': 'blur(3px)', 'pointer-events': 'none'});
 
     } else if(!target.classList.contains('fa-bars') ){
-        $('#my-nav').css({'right' : '-75%'});
+        $('#my-nav').css({'opacity': '0', 'pointer-events': 'none'});
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});
         $('#logo-link').css({'filter': 'none', 'pointer-events': 'auto'});
@@ -23,7 +23,7 @@ $(document).click(function(event){
 
 $(window).resize(function(){
     if (window.innerWidth > 576) {
-        $('#my-nav').css({'right' : '-75%'});
+        $('#my-nav').css({'opacity': '1', 'pointer-events': 'auto'});
         $('body').css({'height': 'auto', 'overflow-y': 'visible'});
         $('.navbar-brand a').css({'pointer-events': 'auto'});
         $('#logo-link').css({'filter': 'none', 'pointer-events': 'auto'});

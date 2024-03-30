@@ -17,7 +17,6 @@
 }
 
 body{
-    width: 100vw;
     overflow-x: hidden;
     font-family: 'Poppins' !important;
 }
@@ -89,10 +88,12 @@ nav li{
         backdrop-filter: blur(10px);
         display: block;
         position: absolute;
-        right: -75%;
-        /* right: 0; */
+        /* right: -75%; */
+        opacity: 0;
+        pointer-events: none;
+        right: 0;
         top: 0;
-        min-height: 100vh;
+        min-height: 100dvh;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         width: 50%;

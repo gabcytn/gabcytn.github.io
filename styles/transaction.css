@@ -15,9 +15,10 @@
 
 }
 body{
-    width: 100vw;
-    overflow-x: hidden;
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
     font-family: 'Poppins' !important;
+    /* border: 2px solid green; */
 }
 img{
     max-width: 100%;
@@ -29,6 +30,9 @@ header{
     display: flex;
     align-items: center;
     background-color: #101c31;
+}
+nav{
+    width: 100%;
 }
 nav li{
     font-size: 1.15rem;
@@ -74,9 +78,9 @@ nav li{
     }
     #hamburger{
         display: block;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         cursor: pointer;
-        margin-right: .5rem;
+        margin-right: 1rem;
         color: #1a68a8;
     }
     #sign-in-btn{
@@ -89,10 +93,12 @@ nav li{
         backdrop-filter: blur(10px);
         display: block;
         position: absolute;
-        right: -75%;
-        /* right: 0; */
+        /* right: -75%; */
+        opacity: 0;
+        pointer-events: none;
+        right: 0;
         top: 0;
-        min-height: 100vh;
+        min-height: 100dvh;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         width: 50%;
@@ -132,6 +138,8 @@ nav li{
 main{
     background: linear-gradient(to bottom, #101c31, #10091d);
     color: #eee;
+    /* overflow: hidden; */
+    /* width: 100vw; */
 }
 
 .view-all:hover{
