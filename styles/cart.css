@@ -322,6 +322,9 @@ input[type=number]{
     font-weight: 600;
 }
 
+#bag-upgrade{
+    font-size: 258px;
+}
 @media (max-width: 992px){
     .social-media i{
         font-size: 1.25rem;
@@ -381,6 +384,42 @@ input[type=number]{
 }
 
 @media (max-width: 576px) {
+    .main-title h1{
+        font-size: 4.25rem;
+    }
+    .item-description h2{
+        font-size: .85rem;
+    }
+    .item-img img{
+        width: 100px;
+    }
+    #bag-upgrade{
+        font-size: 150px;
+    }
+    .active-cart-item-name{
+        font-size: .85rem;
+    }
+    .active-cart-item-description{
+        font-size: .6rem;
+    }
+    .active-cart-price{
+        font-size: .7rem;
+    }
+    .total-price h5{
+        font-size: .8rem;
+    }
+    .checkout{
+        font-size: .8rem;
+    }
+    .quantity-input label{
+        font-size: .75rem;
+    }
+    .quantity-input input{
+        font-size: .75rem;
+    }
+    .quantity-input button{
+        font-size: .75rem;
+    }
     #discount{
         font-size: 1.5rem;
     }
