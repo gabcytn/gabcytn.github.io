@@ -1,17 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
-		<link href="css/style.css" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div class="container">
-			<h1>Under construction.</h1>
-		</div>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Cayetano — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">GC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="mailto:grmcayetano@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-availability">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+          <h1 class="hero-name">Gabriel<br><span class="accent-word">Cayetano</span></h1>
+          <p class="hero-role"><strong>Software Engineer</strong> &nbsp;·&nbsp; Backend & Full-Stack</p>
+          <div class="hero-location">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Caloocan, Philippines
+          </div>
+          <p class="hero-tagline">
+            I build <em>reliable, well-structured systems</em> — from APIs and automation pipelines to full-stack products. I care about clean architecture, readable code, and shipping things that actually work.
+          </p>
+          <div class="hero-links">
+            <a class="hero-link primary" href="https://github.com/gabcytn" target="_blank">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a class="hero-link" href="https://www.linkedin.com/in/gabriel-cayetano-7640b9334" target="_blank">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a class="hero-link" href="mailto:grmcayetano@gmail.com">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+          <div class="skills-strip" style="margin-top: 28px;">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Vue</span>
+            <span class="skill-tag">Nuxt.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">WebSockets</span>
+          </div>
+        </div>
+        <!-- <div class="hero-avatar">
+          <div class="avatar-ring">GC</div>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="fade-in">
+      <span class="section-label">Experience</span>
+      <div class="exp-list">
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Ayahtek Corp.</div>
+              <div class="exp-role">Software Engineer Trainee · Full-stack</div>
+            </div>
+            <span class="exp-date">Jan 2026 — Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Fixed bugs and shipped incremental features for an assigned project, working on admin panels and customer facing application.</li>
+            <li>Worked in an Agile setup, attended scrum meetings, sprint planning, and peer reviews, while following team coding and review practices.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in">
+      <span class="section-label">Projects</span>
+      <div class="projects-grid">
+
+        <!-- BuWise -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">BuWise</div>
+            <span class="project-badge">🏆 2nd Runner-Up</span>
+          </div>
+          <p class="project-desc">Full-stack bookkeeping platform integrating traditional accounting with RPA automation to streamline financial operations.</p>
+          <ul class="project-bullets">
+            <li>Invoice OCR and automated data extraction via LLMWhisperer, OpenAI & Robocorp to convert unstructured invoices into structured accounting records.</li>
+            <li>Task scheduling, notifications, and real-time messaging for accountant–client coordination.</li>
+            <li>Reduced manual data entry overhead, improving end-to-end operational efficiency.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">OpenAI</span>
+              <span class="project-tag">Robocorp</span>
+            </div>
+            <a class="project-link" href="https://buwise.live" target="_blank">
+              Visit
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- SRSLY -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">SRSLY</div>
+          </div>
+          <p class="project-desc">Spaced-repetition platform for LeetCode-style questions, optimized for long-term retention during coding interview prep.</p>
+          <ul class="project-bullets">
+            <li>Memory-decay scheduling algorithm achieving ~80–85% recall rates through optimized review intervals.</li>
+            <li>AI-assisted code review providing solution feedback and professional critique for improved learning outcomes.</li>
+            <li>Full-featured question bank with difficulty tracking and progress analytics.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <a class="project-link" href="https://srsly-client.vercel.app" target="_blank">
+              Visit
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- HTTP Server -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">HTTP Server</div>
+          </div>
+          <p class="project-desc">Multithreaded Java HTTP/1.1 server built from scratch, mirroring core production web server capabilities.</p>
+          <ul class="project-bullets">
+            <li>Concurrent client handling via ServerSocket and ExecutorService thread pool architecture.</li>
+            <li>Persistent connections, gzip compression, file serving, and HTTP Basic authentication support.</li>
+            <li>Conforms to the HTTP/1.1 specification for real-world compatibility and correctness.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Networking</span>
+              <span class="project-tag">Concurrency</span>
+            </div>
+            <a class="project-link" href="https://gabcytn.github.io/http-server" target="_blank">
+              View Docs
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Stranger Strings -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">Stranger Strings</div>
+          </div>
+          <p class="project-desc">Real-time chat backend with interest-based user matchmaking, designed for low-latency pairing and scalable session management.</p>
+          <ul class="project-bullets">
+            <li>WebSocket-based real-time messaging with persistent message storage for conversation history.</li>
+            <li>Redis-backed interest matchmaking for low-latency user pairing and horizontal scalability.</li>
+            <li>Designed for high concurrency with session isolation and graceful disconnection handling.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">WebSockets</span>
+              <span class="project-tag">Redis</span>
+            </div>
+            <a class="project-link" href="https://github.com/gabcytn/stranger-strings-api" target="_blank">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /wrapper -->
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Gabriel Cayetano.</p>
+    <div class="footer-links">
+      <a href="https://github.com/gabcytn" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/gabriel-cayetano-7640b9334" target="_blank">LinkedIn</a>
+      <a href="mailto:grmcayetano@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
 </html>
