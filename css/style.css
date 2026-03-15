@@ -334,9 +334,9 @@ section:last-child { padding-bottom: 120px; }
 
 /* ── PROJECTS ── */
 .projects-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
 }
 .project-card {
 	background: var(--bg-card);
